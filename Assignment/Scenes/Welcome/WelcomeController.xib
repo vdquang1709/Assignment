@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Bold.ttf">
+            <string>SFUIText-Bold</string>
+        </array>
+        <array key="SFUIText-Light.ttf">
+            <string>SFUIText-Light</string>
+        </array>
+        <array key="SFUIText-Regular.ttf">
+            <string>SFUIText-Regular</string>
+        </array>
+        <array key="SFUIText-Semibold.ttf">
+            <string>SFUIText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeController" customModule="Assignment" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="Yjh-uJ-oDA" id="vnf-cc-YdZ"/>
+                <outlet property="continueBtn" destination="HL0-0K-ZER" id="5Tf-mW-o4T"/>
+                <outlet property="scrollView" destination="kRK-ZG-h13" id="JZ9-b2-zmW"/>
+                <outlet property="usernameTextField" destination="DhY-7S-9VN" id="A9X-m5-xfQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRK-ZG-h13">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BU1-qh-mhj" userLabel="Background">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yjh-uJ-oDA" userLabel="Container">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL0-0K-ZER">
+                                            <rect key="frame" x="57" y="767" width="300" height="60"/>
+                                            <color key="backgroundColor" red="0.97254901960784312" green="0.66274509803921566" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="GC5-yB-hDH"/>
+                                                <constraint firstAttribute="width" constant="300" id="M06-hT-kDf"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="18"/>
+                                            <state key="normal" title="Continue">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="contBtnTouch:" destination="-1" eventType="touchUpInside" id="bTS-Ix-Pao"/>
+                                            </connections>
+                                        </button>
+                                        <textField opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Instagram Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DhY-7S-9VN" userLabel="UserName">
+                                            <rect key="frame" x="57" y="687" width="300" height="60"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="300" id="X6v-az-BJO"/>
+                                                <constraint firstAttribute="height" constant="60" id="yoK-M7-cAv"/>
+                                            </constraints>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NZh-od-NJX">
+                                            <rect key="frame" x="72.5" y="211" width="299" height="168"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="168" id="8Ve-6U-wsp"/>
+                                                <constraint firstAttribute="width" constant="299" id="M14-L2-53V"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life is all about experiences. Rediscover your top nine Instagram moments from 2019 and share them with your frends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQG-ya-pLk" userLabel="SubTitle">
+                                            <rect key="frame" x="57" y="480" width="300" height="72"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="300" id="OsD-xy-089"/>
+                                                <constraint firstAttribute="height" constant="72" id="QIQ-w0-4LA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="16"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Your Top Nine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-T3-Uny" userLabel="Title">
+                                            <rect key="frame" x="115" y="444" width="184" height="24"/>
+                                            <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="20"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <constraints>
+                                        <constraint firstItem="xQG-ya-pLk" firstAttribute="top" secondItem="ewG-T3-Uny" secondAttribute="bottom" constant="12" id="6pm-PU-ZZu"/>
+                                        <constraint firstAttribute="bottom" secondItem="HL0-0K-ZER" secondAttribute="bottom" constant="69" id="EK4-1P-4ZR"/>
+                                        <constraint firstItem="NZh-od-NJX" firstAttribute="top" secondItem="Yjh-uJ-oDA" secondAttribute="top" constant="211" id="RNq-he-AA9"/>
+                                        <constraint firstItem="NZh-od-NJX" firstAttribute="centerX" secondItem="Yjh-uJ-oDA" secondAttribute="centerX" constant="15" id="WSl-hE-fro"/>
+                                        <constraint firstItem="ewG-T3-Uny" firstAttribute="top" secondItem="NZh-od-NJX" secondAttribute="bottom" constant="65" id="XqZ-ho-fHZ"/>
+                                        <constraint firstItem="ewG-T3-Uny" firstAttribute="centerX" secondItem="Yjh-uJ-oDA" secondAttribute="centerX" id="fy0-VW-h3v"/>
+                                        <constraint firstItem="xQG-ya-pLk" firstAttribute="centerX" secondItem="Yjh-uJ-oDA" secondAttribute="centerX" id="g6Q-RY-g6W"/>
+                                        <constraint firstItem="HL0-0K-ZER" firstAttribute="centerX" secondItem="Yjh-uJ-oDA" secondAttribute="centerX" id="mDU-9F-zC5"/>
+                                        <constraint firstItem="HL0-0K-ZER" firstAttribute="top" secondItem="DhY-7S-9VN" secondAttribute="bottom" constant="20" id="nj0-XF-ikO"/>
+                                        <constraint firstItem="DhY-7S-9VN" firstAttribute="centerX" secondItem="Yjh-uJ-oDA" secondAttribute="centerX" id="uJp-5L-9wl"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Yjh-uJ-oDA" secondAttribute="bottom" id="1fa-td-jzg"/>
+                                <constraint firstAttribute="trailing" secondItem="Yjh-uJ-oDA" secondAttribute="trailing" id="au4-gs-lSK"/>
+                                <constraint firstItem="Yjh-uJ-oDA" firstAttribute="leading" secondItem="BU1-qh-mhj" secondAttribute="leading" id="bx8-Go-eUe"/>
+                                <constraint firstItem="Yjh-uJ-oDA" firstAttribute="top" secondItem="BU1-qh-mhj" secondAttribute="top" id="tY0-c6-dCu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="BU1-qh-mhj" secondAttribute="trailing" id="KdO-0y-Xa8"/>
+                        <constraint firstAttribute="bottom" secondItem="BU1-qh-mhj" secondAttribute="bottom" id="bsC-Oi-4T8"/>
+                        <constraint firstItem="BU1-qh-mhj" firstAttribute="top" secondItem="kRK-ZG-h13" secondAttribute="top" id="gbL-00-Zwj"/>
+                        <constraint firstItem="BU1-qh-mhj" firstAttribute="centerY" secondItem="kRK-ZG-h13" secondAttribute="centerY" id="hsH-Rs-uLz"/>
+                        <constraint firstItem="BU1-qh-mhj" firstAttribute="centerX" secondItem="kRK-ZG-h13" secondAttribute="centerX" id="k2K-fx-eA2"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kRK-ZG-h13" secondAttribute="bottom" id="521-Az-Fn5"/>
+                <constraint firstItem="BU1-qh-mhj" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="8Ba-La-seU"/>
+                <constraint firstAttribute="trailing" secondItem="kRK-ZG-h13" secondAttribute="trailing" id="HP9-LS-AML"/>
+                <constraint firstItem="kRK-ZG-h13" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WJh-z7-VFb"/>
+                <constraint firstItem="kRK-ZG-h13" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lV6-f6-J6i"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="124.55357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="299" height="168"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
