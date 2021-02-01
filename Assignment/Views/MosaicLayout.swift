@@ -28,6 +28,8 @@ class MosaicLayout: UICollectionViewLayout {
     var delegate: MosaicLayoutDelegate?
     var contentBounds = CGRect.zero
     var cachedAttributes = [UICollectionViewLayoutAttributes]()
+    let tileReferenceHeight: CGFloat = 105.0
+    let tileReferenceWidth: CGFloat = 125.0
     
     /// - Tag: PrepareMosaicLayout
     override func prepare() {
@@ -55,7 +57,7 @@ class MosaicLayout: UICollectionViewLayout {
         let cvWidth = collectionView.frame.size.width
         let cvHeight = collectionView.frame.size.height
         
-        let cvHeightUnit = ((cvWidth / 3.0) / 125.0) * 105.0
+        let cvHeightUnit = ((cvWidth / 3.0) / tileReferenceWidth) * tileReferenceHeight
         
         let actualHeight = CGFloat(calculateActualHeight(renderType: renderType, totalElements: count, width: Float(cvHeightUnit)))
         

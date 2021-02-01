@@ -9,7 +9,7 @@ import UIKit
 
 extension WelcomeController : MosaicLayoutDelegate {
     func renderType() -> RenderType {
-        .type0
+        return .type0
     }
     
     

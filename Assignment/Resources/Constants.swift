@@ -30,10 +30,13 @@ struct Fonts {
 }
 
 struct Dimensions {
-    static let castTVfItemHeight:Float = 120.0
-    static let castTVItemPadding: Float = 10.0
-    static let castTVNumberItemInLine : Int = 2
-    static let castTVItemCornerRadius: CGFloat = 18.0
+    static let settingLogoutCellHeight: CGFloat = 120
+    static let settingUnlockPremiumCellHeight: CGFloat = 123
+    static let settingMenuItemCellHeight: CGFloat = 68.0
+    static let controlsItemWidth: CGFloat = 68
+    static let controlsItemHeight: CGFloat = 94
+    static let controlsPaddingWidth: CGFloat = 20
+    static let controlsSpacingWidth: CGFloat = 16
 }
 
 struct Images {
@@ -43,4 +46,22 @@ struct Images {
     static let video = "ic_feature_video"
     static let share = "ic_feature_share"
     static let removeAds = "ic_feature_ads"
+}
+
+struct Strings {
+    static let unlockPremiumText1 = "Unlock Preminum\n"
+    static let unlockPremiumText2 = "Remove watermark, unlock video..."
+    
+    static let restore = "Restore"
+    static let rating = "Rating"
+    static let shareApp = "Share App"
+    static let contactUs = "Contact Us"
+    static let teamOfServices = "Team Of Services"
+    static let privacyPolicy = "Privacy Policy"
+    
+    static let grid = "GRID"
+    static let save = "SAVE"
+    static let getVideo = "GET VIDEO"
+    static let share = "SHARE"
+    static let removeAds = "REMOVE ADS"
 }

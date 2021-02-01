@@ -39,13 +39,13 @@ extension SettingsController: UITableViewDataSource {
         let index = indexPath.row
         
         if index == 0{
-            return 123
+            return Dimensions.settingUnlockPremiumCellHeight
         }
         
         if index == self.settingItems.count + 1 {
-           return 120
+           return Dimensions.settingLogoutCellHeight
         }
         
-        return 68.0
+        return Dimensions.settingMenuItemCellHeight
     }
 }

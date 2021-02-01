@@ -34,9 +34,9 @@ class UnlockPremiumCell: UITableViewCell {
         
         let attrs2 = [NSAttributedString.Key.font : UIFont(name: Fonts.preminumSubtitle, size: 13.0), NSAttributedString.Key.foregroundColor : Colors.tagLineSecondHalf]
         
-        let attributedString1 = NSMutableAttributedString(string:"Unlock Preminum\n", attributes:attrs1 as [NSAttributedString.Key : Any])
+        let attributedString1 = NSMutableAttributedString(string: Strings.unlockPremiumText1, attributes:attrs1 as [NSAttributedString.Key : Any])
         
-        let attributedString2 = NSMutableAttributedString(string:"Remove watermark, unlock video...", attributes:attrs2 as [NSAttributedString.Key : Any])
+        let attributedString2 = NSMutableAttributedString(string: Strings.unlockPremiumText2, attributes:attrs2 as [NSAttributedString.Key : Any])
         
         attributedString1.append(attributedString2)
         

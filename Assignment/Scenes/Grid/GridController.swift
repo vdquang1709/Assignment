@@ -13,11 +13,11 @@ class GridController: UIViewController {
     }
     
     internal let controlBtnList: [ControlButtonData] = [
-        ControlButtonData(text: "GRID", image: Images.grid),
-        ControlButtonData(text: "SAVE", image: Images.save),
-        ControlButtonData(text: "GET VIDEO", image: Images.video),
-        ControlButtonData(text: "SHARE", image: Images.share),
-        ControlButtonData(text: "REMOVE ADS", image: Images.removeAds)
+        ControlButtonData(text: Strings.grid, image: Images.grid),
+        ControlButtonData(text: Strings.save , image: Images.save),
+        ControlButtonData(text: Strings.getVideo , image: Images.video),
+        ControlButtonData(text: Strings.share , image: Images.share),
+        ControlButtonData(text: Strings.removeAds , image: Images.removeAds)
     ]
     
     internal var gridRenderType: RenderType = .type9
