@@ -12,25 +12,23 @@ class WelcomeController: UIViewController {
         return .lightContent
     }
     
-    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var continueBtn: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
     internal var imageGridCollectionView: UICollectionView!
     internal var dataSize = 15
     internal var gridImageData : [String] = []
+    private var bottomConstraintDefaultValue : Float = 0
     
     var gradientLayer: CAGradientLayer!
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(WelcomeController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(WelcomeController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        self.bottomConstraintDefaultValue = Float(self.bottomConstraint.constant)
         setup()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        self.gradientLayer.frame = self.containerView.frame
     }
     
     @IBAction func contBtnTouch(_ sender: Any) {
@@ -45,10 +43,10 @@ class WelcomeController: UIViewController {
         
         let offset = keyboardSize.minY - self.usernameTextField.frame.maxY - 10
         
-        self.scrollView.setContentOffset(CGPoint(x: 0, y: -offset), animated: true)
+        self.bottomConstraint.constant -= offset
     }
 
     @objc func keyboardWillHide(notification: NSNotification) {
-        self.scrollView.setContentOffset(.zero, animated: true)
+        self.bottomConstraint.constant = CGFloat(self.bottomConstraintDefaultValue)
     }
 }

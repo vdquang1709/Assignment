@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E04B25325C295260086E6A2 /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04B25225C295260086E6A2 /* UIColor+Extentions.swift */; };
 		9E04B25625C2952F0086E6A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04B25525C2952F0086E6A2 /* Constants.swift */; };
+		9E15A49125E8D13F000C420A /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E15A49025E8D13F000C420A /* UIDevice+Extensions.swift */; };
 		9E42607625C6594800F9561C /* WelcomeController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42607525C6594800F9561C /* WelcomeController+Extension.swift */; };
 		9E42607925C6596300F9561C /* WelcomeController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42607825C6596300F9561C /* WelcomeController+DataSource.swift */; };
 		9E42607C25C6597100F9561C /* WelcomeController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42607B25C6597100F9561C /* WelcomeController+Delegate.swift */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		9E04B25225C295260086E6A2 /* UIColor+Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extentions.swift"; sourceTree = "<group>"; };
 		9E04B25525C2952F0086E6A2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9E15A49025E8D13F000C420A /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
 		9E42607525C6594800F9561C /* WelcomeController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeController+Extension.swift"; sourceTree = "<group>"; };
 		9E42607825C6596300F9561C /* WelcomeController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeController+DataSource.swift"; sourceTree = "<group>"; };
 		9E42607B25C6597100F9561C /* WelcomeController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeController+Delegate.swift"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				9E04B25225C295260086E6A2 /* UIColor+Extentions.swift */,
+				9E15A49025E8D13F000C420A /* UIDevice+Extensions.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				9E04B25325C295260086E6A2 /* UIColor+Extentions.swift in Sources */,
 				9EEF0A6125C66F05003B9DD5 /* SettingsController+Datasource.swift in Sources */,
 				9E6293DB25C2811B00778984 /* SceneDelegate.swift in Sources */,
+				9E15A49125E8D13F000C420A /* UIDevice+Extensions.swift in Sources */,
 				9EEF0A5B25C66EF1003B9DD5 /* SettingsController+Extension.swift in Sources */,
 				9E04B25625C2952F0086E6A2 /* Constants.swift in Sources */,
 				9E42607625C6594800F9561C /* WelcomeController+Extension.swift in Sources */,

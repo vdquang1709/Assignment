@@ -32,13 +32,16 @@ class GridController: UIViewController {
     @IBOutlet weak var gridContainer: UIView!
     @IBOutlet weak var tagLine: UILabel!
     
+    @IBOutlet weak var topContraint: NSLayoutConstraint!
     
     internal var gradientView: UIView!
     internal var gradientLayer: CAGradientLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if UIDevice.current.hasNotch {
+            topContraint.constant += 44
+        }
         setup()
     }
     

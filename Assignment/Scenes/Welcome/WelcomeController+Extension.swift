@@ -36,29 +36,20 @@ extension WelcomeController {
     }
     
     internal func setupBackground() {
-        let colorTop =  Colors.backgroundGradientStart.cgColor
-        let colorBottom = Colors.backgroundGradientEnd.cgColor
-        
-        self.gradientLayer = CAGradientLayer()
-        self.gradientLayer.colors = [colorTop, colorBottom]
-        self.gradientLayer.locations = [0.0,0.6]
-        
-        self.containerView.layer.insertSublayer(self.gradientLayer, at:0)
-        
         let mosaicLayout = MosaicLayout()
         
         mosaicLayout.delegate = self
         
-        self.imageGridCollectionView = UICollectionView(frame: self.containerView.bounds, collectionViewLayout: mosaicLayout)
+        self.imageGridCollectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: mosaicLayout)
         
-        self.containerView.insertSubview(imageGridCollectionView, at: 0)
+        self.view.insertSubview(imageGridCollectionView, at: 0)
         
         
         self.imageGridCollectionView.translatesAutoresizingMaskIntoConstraints = false
-        self.imageGridCollectionView.topAnchor.constraint(equalTo: self.containerView.topAnchor).isActive = true
-        self.imageGridCollectionView.bottomAnchor.constraint(equalTo: self.containerView.bottomAnchor).isActive = true
-        self.imageGridCollectionView.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor).isActive = true
-        self.imageGridCollectionView.trailingAnchor.constraint(equalTo: self.containerView.trailingAnchor).isActive = true
+        self.imageGridCollectionView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+        self.imageGridCollectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        self.imageGridCollectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        self.imageGridCollectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         
         self.gridImageData = GridImageData.fetchData(size: self.dataSize)
         
